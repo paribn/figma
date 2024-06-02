@@ -518,4 +518,22 @@ iPads and Tablets: 481px — 1200px
   .members {
     width: 100%;
   }
+  .users {
+    display: none;
+  }
+  .engage {
+    display: none;
+  }
+  .helpus {
+    display: none;
+  }
+  .Divider {
+    display: none;
+  }
+  .collaboration {
+    display: none;
+  }
+  footer {
+    display: none;
+  }
 }
