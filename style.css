@@ -3,6 +3,7 @@
   padding: 0;
   list-style: none;
   text-decoration: none;
+  box-sizing: border-box;
   font-family: Roboto;
 }
 body {
@@ -31,13 +32,13 @@ body {
 .link_header li a {
   color: black;
 }
-.container {
-  width: 1450px;
-  margin: 16px;
-}
+
 .collaboration {
   display: flex;
   align-items: center;
+}
+
+.img img {
   width: 100%;
 }
 .text {
@@ -80,10 +81,13 @@ body {
   font-weight: bold;
 }
 .text_box p {
-  width: 896px;
+  /* width: 896px; */
+  width: 50%;
   margin-top: 12px;
 }
-
+.box {
+  width: 100%;
+}
 .card {
   width: 100%;
   height: 340px;
@@ -91,7 +95,7 @@ body {
   justify-content: space-between;
 }
 .cards {
-  width: 428px;
+  width: 30%;
   height: 340px;
   display: flex;
   flex-direction: column;
@@ -104,13 +108,13 @@ body {
   box-shadow: 2px 2px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .founder_members {
-  width: 100%;
+  /* width: 0%; */
   display: flex;
   justify-content: space-between;
   margin: 100px 0px 0px 40px;
 }
 .founders {
-  width: 644px;
+  width: 50%;
   height: 344px;
   margin-right: 28px;
 }
@@ -125,7 +129,7 @@ body {
   text-align: justify;
 }
 .members {
-  width: 484px;
+  width: 30%;
   height: 350px;
   padding: 16px;
   border: 4px solid black;
@@ -416,4 +420,102 @@ footer {
 }
 section {
   margin-left: 30px;
+}
+.mobile {
+  width: 100%;
+  display: flex;
+}
+/* <!-- 
+ Mobile Devices: 319px — 480px
+iPads and Tablets: 481px — 1200px
+ Laptops: 1201px — 1600px
+ Desktops: 1601px and more
+--> */
+
+@media (min-width: 1100px) {
+  .mobile {
+    display: none;
+  }
+}
+
+@media (min-width: 319px) and (max-width: 1100px) {
+  .mobile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px;
+  }
+  header {
+    width: 100%;
+  }
+  .head {
+    display: none;
+  }
+  .logo img {
+    display: none;
+  }
+  header hr {
+    display: none;
+  }
+  .logo h1 {
+    display: none;
+  }
+  .link {
+    display: none;
+  }
+  .collaboration {
+    flex-direction: column-reverse;
+    width: 100%;
+  }
+  .text {
+    width: 100%;
+  }
+  .head_text span {
+    font-size: 30px;
+  }
+  .img {
+    width: 100%;
+  }
+  .head_text p {
+    font-size: 16px;
+  }
+  .box {
+    margin-top: 100px;
+  }
+  .text_box {
+    margin: 20px 0;
+  }
+  .text_box h3 {
+    font-size: 30px;
+  }
+  .text_box p {
+    font-size: 18px;
+    width: 100%;
+    padding: 4px;
+    margin-bottom: 32px;
+  }
+  .card {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .cards {
+    width: 100%;
+    padding: 6px;
+  }
+  .founder_members {
+    flex-direction: column;
+    margin-top: 300px;
+    width: 100%;
+  }
+  .founders {
+    width: 100%;
+  }
+  .founders h3 {
+    font-size: 30px;
+    text-align: center;
+  }
+  .members {
+    width: 100%;
+  }
 }
