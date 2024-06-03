@@ -85,7 +85,6 @@ body {
   font-weight: bold;
 }
 .text_box p {
-  /* width: 896px; */
   width: 50%;
   margin-top: 12px;
 }
@@ -94,13 +93,11 @@ body {
 }
 .card {
   width: 100%;
-  /* height: 340px; */
   display: flex;
   justify-content: space-between;
 }
 .cards {
   width: 30%;
-  /* height: 340px; */
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -112,15 +109,11 @@ body {
   box-shadow: 2px 2px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .founder_members {
-  /* width: 0%; */
   display: flex;
   justify-content: space-between;
-  /* margin: 100px 0px 0px 40px; */
 }
 .founders {
   width: 50%;
-  /* height: 344px; */
-  /* margin-right: 64px; */
 }
 .founders h3 {
   font-size: 48px;
@@ -134,7 +127,6 @@ body {
 }
 .members {
   width: 30%;
-  height: 350px;
   padding: 16px;
   border: 4px solid black;
   border-radius: 16px;
@@ -167,11 +159,9 @@ body {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  /* margin-top: 100px; */
 }
 .investor {
   width: 30%;
-  /* height: 380px; */
   border: 4px solid black;
   border-radius: 16px;
   padding: 12px;
@@ -191,11 +181,8 @@ body {
   font-style: italic;
   opacity: 0.5;
   color: #66645e;
-  /* margin-left: 12px; */
 }
-.contact {
-  margin-left: 12px;
-}
+
 .contact_p {
   font-size: 16px;
   font-weight: bold;
@@ -216,7 +203,7 @@ body {
 }
 .contact button {
   width: 100%;
-  height: 56px;
+  padding: 14px;
   font-size: 24px;
   border-radius: 16px;
   background-color: black;
@@ -226,14 +213,12 @@ body {
 }
 .engage {
   display: flex;
-  width: 97%;
-  height: 400px;
-  margin: 100px 0 0 40px;
+  width: 100%;
   gap: 10px;
 }
 
 .mixed {
-  width: 41%;
+  width: 50%;
   height: 140px;
   display: flex;
   flex-wrap: wrap;
@@ -245,7 +230,8 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin: 14px 14px 30px 14px;
+  padding: 20px;
+  /* margin: 14px 14px 30px 14px; */
 }
 .share h3 {
   font-size: 18px;
@@ -272,10 +258,10 @@ body {
   margin-top: 16px;
 }
 .applicants {
-  width: 350px;
+  width: 56%;
   border: 4px solid black;
   border-radius: 16px;
-  padding: 6px;
+  padding: 21px;
 }
 .applicants h3 {
   font-size: 24px;
@@ -283,8 +269,7 @@ body {
   margin: 20px;
 }
 .user_profile {
-  width: 240px;
-  height: 288px;
+  width: 42%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -292,6 +277,7 @@ body {
   gap: 10px;
   border: 4px solid #71a894;
   border-radius: 16px;
+  padding: 12px;
 }
 .user_profile img {
   width: 72px;
@@ -312,19 +298,19 @@ body {
   margin-top: 10px;
 }
 .user_profile button {
-  width: 192px;
-  height: 44px;
+  width: 100%;
   background-color: black;
   color: white;
   border-radius: 16px;
   font-size: 16px;
   margin-top: 8px;
+  padding: 12px;
 }
 .applicant_users {
   display: flex;
   gap: 12px;
   align-items: center;
-  margin: 20px;
+  margin: 20px 0;
 }
 .applicant_users img {
   width: 40px;
@@ -403,7 +389,7 @@ body {
   margin-top: 30px;
 }
 .Divider {
-  margin: 30px 0px 30px 0px;
+  margin: 30px 0px;
 }
 footer {
   width: 100%;
@@ -437,7 +423,7 @@ iPads and Tablets: 481px — 1200px
  Desktops: 1601px and more
 --> */
 
-@media (min-width: 1100px) {
+@media (min-width: 1024px) {
   .mobile {
     display: none;
   }
@@ -505,7 +491,7 @@ iPads and Tablets: 481px — 1200px
   .card {
     display: flex;
     flex-direction: column;
-    gap: 50px;
+    gap: 100px;
   }
   .cards {
     width: 100%;
@@ -545,6 +531,7 @@ iPads and Tablets: 481px — 1200px
   }
   .faqs {
     flex-direction: column;
+    gap: 50px;
   }
   .helpus {
     padding: 12px;
@@ -557,5 +544,25 @@ iPads and Tablets: 481px — 1200px
   .social_media_list li a {
     font-size: 16px;
     justify-content: space-between;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1600px) {
+  .box,
+  .founder_members,
+  .users,
+  .engage,
+  .helpus {
+    padding: 20px;
+    margin-top: 100px;
+  }
+  .collaboration {
+    padding: 20px;
+  }
+  .cards {
+    padding: 18px;
+  }
+  .Divider img {
+    width: 100%;
   }
 }
