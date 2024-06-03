@@ -94,13 +94,13 @@ body {
 }
 .card {
   width: 100%;
-  height: 340px;
+  /* height: 340px; */
   display: flex;
   justify-content: space-between;
 }
 .cards {
   width: 30%;
-  height: 340px;
+  /* height: 340px; */
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -509,11 +509,11 @@ iPads and Tablets: 481px — 1200px
   }
   .cards {
     width: 100%;
-    padding: 6px;
+    padding: 20px;
   }
   .founder_members {
     flex-direction: column;
-    margin-top: 400px;
+    margin-top: 20px;
     width: 100%;
     padding: 12px;
     text-align: center;
